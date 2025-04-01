@@ -3,9 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Link-in-bio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+  <style>
+    /* * {
+      border: 1px red dashed;
+    } */
+
+    html {
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100%;
+      padding: 40px 0;
+      background: rgb(238,174,202);
+      background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+      color: rgba(255, 255, 255, 1.0);
+      font-family: "Raleway";
+    }
+
+    a {
+      color: rgba(255, 255, 255, 1.0);
+      text-decoration: none;
+    }
+
+    .main-container {
+      max-width: 640px;
+      margin: auto;
+    }
+
+    .avatar-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border: 8px solid;
+      border-radius: 128px;
+      border-color: white;
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+    }
+
+    .item {
+      background-color: rgba(149, 123, 173, 0.5);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 1000px;
+      padding: 15px;
+      padding-right: 53px;
+      box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+    }
+
+    .image-row {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .name-row {
+      margin-bottom: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Playfair Display";
+      font-size: 32px;
+      font-weight: 800;
+    }
+
+    .social-icons-row {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .link-text {
+      text-align: center;
+      flex-grow: 1;
+    }
+  </style>
 </head>
 <body>
-  <h1>My link-in-bio</h1>
+  <div class="main-container">
+    <div class="image-row">
+      <img class="avatar-image" src="/thumbnails/profile-pic.jpg" alt="Mycah Accad headshot">
+    </div>
+
+    <div class="name-row">
+      Mycah Accad
+    </div>
+
+    <div class="social-icons-row">
+      <a href="https://github.com/codewithMycah" target="_blank">
+        <i class="fa-brands fa-github fa-xl"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/accadmycah/" target="_blank">
+        <i class="fa-brands fa-linkedin-in fa-xl"></i>
+      </a>
+
+      <a href="https://www.behance.net/mycahaccad" target="_blank">
+        <i class="fa-brands fa-behance fa-xl"></i>
+      </a>
+    </div>
+
+    <div class="links-row">
+      <div class="item">
+        <i class="fa-solid fa-code fa-xl"></i>
+
+        <a class="link-text" target="_blank" href="https://www.w3schools.com/">
+          W3 Schools
+        </a>
+      </div>
+
+      <div class="item">
+        <i class="fa-solid fa-code fa-xl"></i>
+
+        <a class="link-text" target="_blank" href="https://scrimba.com/html-css-crash-course-c02l">
+          HTML & CSS Crash Course
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
